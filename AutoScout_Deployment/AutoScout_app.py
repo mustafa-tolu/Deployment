@@ -44,7 +44,7 @@ model = pickle.load(open(filename, 'rb'))
 # --------------------------
 
 with st.sidebar:
-    st.subheader(':racing_car: Car Specs to Predict Price :racing_car:')
+    st.markdown(':racing_car: ## Car Specs to Predict Price :racing_car:')
     st.write("\n\n")
 
 make_model = st.sidebar.selectbox("Model Selection", ("Audi A3", "Audi A1", "Opel Insignia", "Opel Astra", "Opel Corsa", "Renault Clio", "Renault Espace", "Renault Duster"))
