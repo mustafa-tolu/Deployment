@@ -8,7 +8,7 @@ import pickle
 # --------------------------
 
 html_temp = """
-<div style="background-color:#8F0860;border: 3px solid black;border-radius: 20px;padding:1.5px">
+<div style="background-color:#8F0860; padding:1.5px">
 <h1 style="color:white;text-align:center;">CAR PRICE PREDICTION </h1>
 </div><br>"""
 st.markdown(html_temp, unsafe_allow_html=True)
