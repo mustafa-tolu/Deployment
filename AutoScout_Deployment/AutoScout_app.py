@@ -43,9 +43,8 @@ model = pickle.load(open(filename, 'rb'))
 
 # --------------------------
 
-with st.sidebar:
-    st.markdown('## :racing_car: Car Specs to Predict Price :racing_car:')
-    st.write("\n\n")
+st.sidebar.markdown('## :racing_car: Car Specs to Predict Price :racing_car:')
+st.sidebar.write("\n\n")
 
 make_model = st.sidebar.selectbox("Model Selection", ("Audi A3", "Audi A1", "Opel Insignia", "Opel Astra", "Opel Corsa", "Renault Clio", "Renault Espace", "Renault Duster"))
 hp_kW = st.sidebar.number_input("Horse Power:",min_value=40, max_value=294, value=120, step=5)
