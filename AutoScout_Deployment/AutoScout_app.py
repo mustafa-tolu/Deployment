@@ -84,14 +84,14 @@ if st.button("Predict"):
 
     # --------------------------
 
-    col8, col9, col10 = st.columns([1,5,1])
-    with col8:
-        st.write("")
-    with col9:
-        img = Image.open("car-shadow.jpg")
-        st.image(img)
-    with col10:
-        st.write("")
+#    col8, col9, col10 = st.columns([1,5,1])
+#    with col8:
+#        st.write("")
+#    with col9:
+#        img = Image.open("car-shadow.jpg")
+#        st.image(img)
+#    with col10:
+#        st.write("")
 
 
 st.write("\n\n")
