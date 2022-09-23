@@ -17,22 +17,12 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([2,4,1]) # 2. col's width is larger
 
-with col1:
-    st.write("")
+col1.write("")
 
-with col2:
-    img = Image.open("car-models.jpg")
-    st.image(img, width=300)
+img = Image.open("car-models.jpg")
+col2.image(img, width=300)
 
-with col3:
-    st.write("")
-
-# Alternative
-# # Two equal columns:
-# >>> col1, col2, col3 = st.columns(3)
-# >>> col1.write("This is column 1")
-# >>> col2.write("This is column 2")
-# >>> col3.write("This is column 2")
+col3.write("")
 
 st.write("\n\n"*2)
 
